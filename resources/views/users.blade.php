@@ -8,9 +8,9 @@
                 <div class="card-header">Halaman User</div>
 
                 <div class="card-body">
-                        @foreach ($users as $user)
-                        {{$user}}
-                        @endforeach
+
+                    <users :data="{{$users->toJson()}}"></users>
+
                 </div>
             </div>
 
